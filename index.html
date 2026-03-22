@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cybersecurity & Data Protection</title>
+
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        margin: 0;
+        background: #f0f4f8;
+        scroll-behavior: smooth;
+      }
+
+      header {
+        background: linear-gradient(135deg, #141e30, #243b55);
+        color: white;
+        padding: 70px 20px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 42px;
+        margin-bottom: 10px;
+      }
+
+      nav {
+        background: #0f172a;
+        padding: 12px;
+        position: sticky;
+        top: 0;
+        text-align: center;
+        z-index: 1000;
+      }
+
+      nav a {
+        color: #e2e8f0;
+        margin: 12px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: #38bdf8;
+      }
+
+      section {
+        margin: 25px;
+        padding: 30px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        color: #1e3a8a;
+      }
+
+      .highlight {
+        background: #e0f2fe;
+        padding: 15px;
+        border-left: 5px solid #0284c7;
+        margin: 15px 0;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        background: #f8fafc;
+        padding: 20px;
+        border-radius: 10px;
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      code {
+        display: block;
+        background: #1e293b;
+        color: #38bdf8;
+        padding: 15px;
+        border-radius: 8px;
+        overflow-x: auto;
+      }
+
+      .stats {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+      }
+
+      .stats div {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: #0f172a;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Cybersecurity & Data Protection</h1>
+      <p>Deep Dive into Digital Security Systems</p>
+    </header>
+
+    <nav>
+      <a href="#history">History</a>
+      <a href="#importance">Importance</a>
+      <a href="#areas">Key Areas</a>
+      <a href="#model">Model</a>
+      <a href="#impact">Impact</a>
+      <a href="#analysis">Analysis</a>
+      <a href="#future">Future</a>
+    </nav>
+
+    <section id="history">
+      <h2>📜 Evolution of Cybersecurity</h2>
+      <p>
+        Cybersecurity has evolved from simple password protection in the 1970s
+        to advanced AI-based security systems today. The first known computer
+        virus, <b>Creeper</b>, appeared in 1971, leading to the creation of
+        antivirus systems.
+      </p>
+
+      <div class="highlight">
+        💡 Key Insight: Cybersecurity evolves alongside cyber threats — making
+        it a continuous race.
+      </div>
+    </section>
+
+    <section id="importance">
+      <h2>⭐ Why Cybersecurity Matters</h2>
+
+      <div class="stats">
+        <div>💰 $10.5T<br />Cybercrime Cost (2025)</div>
+        <div>🔐 90%<br />Data Breaches due to Weak Security</div>
+        <div>🌍 Global Threat<br />Affects All Industries</div>
+      </div>
+
+      <p>
+        Cybersecurity is essential to protect personal data, business
+        information, and national security. Without it, digital systems become
+        vulnerable to hacking, fraud, and data loss.
+      </p>
+    </section>
+
+    <section id="areas">
+      <h2>🔍 Core Areas</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Network Security</h3>
+          <p>Protects internal networks from unauthorized access.</p>
+        </div>
+
+        <div class="card">
+          <h3>Application Security</h3>
+          <p>Secures software applications from vulnerabilities.</p>
+        </div>
+
+        <div class="card">
+          <h3>Cloud Security</h3>
+          <p>Ensures safety of cloud-based data storage systems.</p>
+        </div>
+
+        <div class="card">
+          <h3>Cryptography</h3>
+          <p>Encrypts data to protect confidentiality.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="model">
+      <h2>📊 Cybersecurity Model (CIA Triad)</h2>
+
+      <ul>
+        <li><b>Confidentiality:</b> Only authorized users can access data</li>
+        <li><b>Integrity:</b> Data remains accurate and unchanged</li>
+        <li><b>Availability:</b> Data is accessible when needed</li>
+      </ul>
+
+      <div class="highlight">
+        Example: Banking systems use all three principles to protect
+        transactions.
+      </div>
+
+      <h3>🔐 Python Code (Hashing)</h3>
+
+      <code>
+        import hashlib data = "secure_data" hash_value =
+        hashlib.sha256(data.encode()).hexdigest() print("Encrypted:",
+        hash_value)
+      </code>
+    </section>
+
+    <section id="impact">
+      <h2>📈 Real-World Impact</h2>
+
+      <ul>
+        <li>Prevents financial fraud and cyber attacks</li>
+        <li>Protects personal identity and privacy</li>
+        <li>Ensures safe online transactions</li>
+      </ul>
+
+      <div class="highlight">
+        Case Study: Major companies like Facebook and Yahoo suffered data
+        breaches affecting millions of users.
+      </div>
+    </section>
+
+    <section id="analysis">
+      <h2>⚖ Critical Analysis</h2>
+
+      <h3>Advantages</h3>
+      <ul>
+        <li>Strong protection against cyber threats</li>
+        <li>Enhances trust in digital systems</li>
+        <li>Supports secure business operations</li>
+      </ul>
+
+      <h3>Limitations</h3>
+      <ul>
+        <li>Expensive to implement and maintain</li>
+        <li>Requires skilled professionals</li>
+        <li>Constantly evolving threats</li>
+      </ul>
+
+      <h3>Solutions</h3>
+      <ul>
+        <li>Use AI-based threat detection</li>
+        <li>Regular security updates</li>
+        <li>User awareness training</li>
+      </ul>
+    </section>
+
+    <section id="future">
+      <h2>🚀 Future of Cybersecurity</h2>
+
+      <p>
+        The future will involve AI-driven security systems, blockchain-based
+        protection, and quantum encryption. Cybersecurity will become more
+        automated and intelligent.
+      </p>
+
+      <div class="highlight">
+        🔮 Prediction: AI will detect cyber attacks before they even happen.
+      </div>
+    </section>
+
+    <section>
+      <h2>🎥 Educational Video</h2>
+      <iframe
+        width="100%"
+        height="350"
+        src="https://www.youtube.com/embed/inWWhr5tnEA"
+        frameborder="0"
+        allowfullscreen
+      >
+      </iframe>
+    </section>
+
+    <footer>
+      <p>© 2026 Advanced Student Project | Cybersecurity & Data Protection</p>
+    </footer>
+  </body>
+</html>
